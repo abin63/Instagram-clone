@@ -84,11 +84,9 @@ posts.forEach((post) => {
 
     // Double-click image
     postImg.addEventListener("dblclick", () => {
-        if (!liked) {
             likePost();
-            // optional: animate heart scale
+            // animate heart scale
             likeBtn.style.transform = "scale(1.5)";
             setTimeout(() => likeBtn.style.transform = "scale(1)", 200);
-        }
     });
 });
